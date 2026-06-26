@@ -41,7 +41,7 @@ toggleCheckbox.addEventListener("click", () => {
   darkMode(toggleCheckbox.checked);
 });
 // show Bullets
-if (bulletLocal !== null) {
+if (bulletLocal === null) {
   let showBullets = bulletLocal === "block";
   bulletsContainer.style.display = bulletLocal;
   applyYesNoOption(".bullets-option", showBullets);
